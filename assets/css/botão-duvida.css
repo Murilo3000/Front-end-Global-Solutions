@@ -1,0 +1,15 @@
+#duvida{
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: #4CC174;
+    height: 3rem;
+    width: 40rem;
+    margin-top: 55px;
+    font-size: 2rem;
+}
+
+#duvida:hover{
+    background-color: #43ad69;
+    transition: 0.3s;
+}

@@ -1,0 +1,7 @@
+.banner{
+    position: relative;
+    width: 100%;
+    height: 53.69rem;
+    background: radial-gradient(103.36% 103.36% at 50% 50%, #757575 0%, #404040 100%);
+    text-align: center;
+}

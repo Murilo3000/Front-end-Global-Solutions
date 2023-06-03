@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <link href="./assets/css/normalize.css" rel="stylesheet" />
+    <link href="./assets/css/reset.css" rel="stylesheet" />
+    <link href="./assets/css/cabeçalho.css" rel="stylesheet"/>
+
+    <link href="./assets/css/menu/menu-item.css" rel="stylesheet"/>
+    <link href="./assets/css/menu/menu-link.css" rel="stylesheet"/>
+    <link href="./assets/css/menu/menu-lista.css" rel="stylesheet"/>
+
+    <link href="./assets/css/banner/banner.css" rel="stylesheet"/>
+    <link href="./assets/css/banner/banner-imagem.css" rel="stylesheet"/>
+
+    <link href="./assets/css/sobre/sobre-descrição.css" rel="stylesheet"/>
+    <link href="./assets/css/sobre/sobre-titulo.css" rel="stylesheet"/>
+    <link href="./assets/css/sobre/sobre.css" rel="stylesheet"/>
+
+    <link href="./assets/css/barra/barra.css" rel="stylesheet"/>
+    <link href="./assets/css/barra/barra-descrição.css" rel="stylesheet"/>
+
+    <link href="./assets/css/card/cards.css" rel="stylesheet"/>
+    <link href="./assets/css/card/card-gpt.css" rel="stylesheet"/>
+
+    <link href="./assets/css/botão-duvida.css" rel="stylesheet"/>
+    <title>Home</title>
+</head>
+<body>
+    <header class="cabeçalho">
+        <img class="logo" alt="Green-House" src="./assets/fotos/logoSemEscrita.png">
+        <div id="nome">GREEN-HOUSE</div>
+
+        <nav class="menu">
+            
+            <ul class="menu__lista">
+
+                <hr width="30px" align="left"></hr>
+
+                <li class="menu__item">
+                    <a class="menu__link" href="./index.html">Início</a>
+                </li>
+
+                <li class="menu__item">
+                    <a class="menu__link" href="./index.html">Contato</a>
+                </li>
+
+                <li class="menu__item">
+                    <a class="menu__link" href="./index.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="botão">
+            <ul class="botão__lista">
+                <button class="butt"><span class="material-symbols-outlined">dark_mode</span></button>
+                <button class="butt"><span class="material-symbols-outlined">light_mode</span></button>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <img class="banner__imagem" src="./assets/fotos/logoBanner.png"/>
+    </section>
+
+    <section class="sobre">
+        <h2 class="sobre__titulo">Conheça nosso projeto!</h2>
+        <p class="sobre__descrição">Por um mundo onde ninguém sinta fome.</p>
+    </section>
+
+    <section class="barra">
+        <p class="barra__descrição">O projeto GREEN-HOUSE instala estufas para criar condições ideais de cultivo de alimentos, combatendo a fome e impulsionando a economia</p>
+    </section>
+
+    <div class="cards">
+        <div class="card">
+            <img src="./assets/fotos/foto1.PNG" alt="Imagem 1">
+            <div class="description">
+                <p>A fome afeta especialmente a África, onde a escassez de alimentos é agravada pela seca persistente no chifre da África. Mais de 200 mil pessoas estão em risco de fome catastrófica, com projeção de aumento de 160% segundo a FAO.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./assets/fotos/foto2.PNG" alt="Imagem 2">
+            <div class="description">
+                <p>Secas, solos inférteis e chuvas irregulares causam escassez de colheitas, resultando em fome e desnutrição generalizadas devido à dificuldade na produção de alimentos.</p>
+            </div>
+        </div>
+    </div>
+
+    <center><button id="duvida">Alguma duvida? Nos envie uma mensagem!</button></center>
+    
+</body>
+</html>

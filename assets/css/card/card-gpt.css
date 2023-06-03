@@ -1,0 +1,24 @@
+.card {
+    position: relative;
+    width: 30%;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 3px 3px 0 0  rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    vertical-align: top;
+    font-size: 150%;
+    height: fit-content;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .card .description {
+    position: relative;
+    margin-top: 10px;
+    height: 10rem;
+  }

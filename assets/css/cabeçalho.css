@@ -1,0 +1,51 @@
+.cabeçalho {
+    align-items: center;
+    background: #50c474;
+    color: white;
+    display: flex;
+    justify-content: left;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.logo{
+    width: 50px;
+    height: auto;
+}
+
+hr{
+    transform: rotate(-90deg);
+    color: #ffff;
+    background-color: white;
+    border: 0.5px solid #FFFFFF;
+    padding: 0 1px;
+}
+
+.butt{
+    background: #50c474;
+    border: none;
+    align-items: right;
+}
+
+.butt:hover{
+    background-color: #49ac68;
+    transition: 0.5s;
+    border-radius: 100%;
+}
+
+.material-symbols-outlined{
+    color: white;
+    border: black;
+}
+
+.botão{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 95%;
+}
+
+#nome{
+    width: 6.%;
+}
