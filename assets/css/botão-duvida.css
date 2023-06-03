@@ -3,10 +3,11 @@
     border-radius: 15px;
     color: white;
     background-color: #4CC174;
-    height: 3rem;
+    height: 5rem;
     width: 40rem;
     margin-top: 55px;
     font-size: 2rem;
+    box-shadow: 3px 4px 0 0 rgb(179, 179, 179);
 }
 
 #duvida:hover{

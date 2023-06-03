@@ -1,0 +1,7 @@
+.quemSomos{
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    margin-top: 10rem;
+    height: 95rem;
+}

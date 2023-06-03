@@ -1,0 +1,9 @@
+.fim{
+    background: #404040;
+    height: 50rem;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 23rem;
+    padding-right: 23rem;
+}

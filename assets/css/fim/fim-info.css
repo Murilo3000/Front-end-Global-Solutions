@@ -1,0 +1,15 @@
+.fim__info{
+    display: flex;
+    font-size: 2.5rem;
+    background: #404040;
+    border: none;
+    align-items: right;
+    color: white;
+    padding: 2rem;
+}
+
+.fim__info:hover{
+    background-color: #313131;
+    transition: 0.5s;
+    border-radius: 10%;
+}
