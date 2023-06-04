@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+body{
+    background: url(../fotos);
+}
+.contato{
+    font-family: 'Cardo', serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: inline;
+    justify-content: center;
+    align-items: center;
+}
+.contato-card{
+    font-family: 'Cardo', serif;
+    width: 1050px;
+    height: 200px;
+    background:#EBEBEB;
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+}
+.contato-card::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #4CC174;
+    transform: rotate(3deg);
+    border-radius: 10px;
+    z-index: -1;
+}
+.contato-card-item{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.contato-card__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+}
+.contato-card__msg a{
+    text-decoration: none;
+    color: #43ad69;
+}
+.contato-card__msg a:hover{
+    text-decoration: underline;
+}
+input{
+    border-radius: 20px;
+    width: 17.3rem;
+    height: 3rem;
+    border: none;
+    background: #d9d9d9;
+}
+input:placeholder-shown{
+    padding-left: 1rem;
+}
+textarea:placeholder-shown{
+    padding-left: 1rem;
+}
+textarea{
+    border-radius:20px;
+    width:15rem;
+    height: 5rem;
+    border: none;
+    background: #d9d9d9;
+}
+#envie{
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: #4CC174;
+    height: 4rem;
+    width: 9rem;
+    margin-top: 55px;
+    font-size: 1.5rem;
+    box-shadow: 3px 4px 0 0 rgb(179, 179, 179);
+}
+#envie:hover{
+    background-color: #43ad69;
+    transition: 0.3s;
+}
+#titulo{
+    font-family: 'Cardo', serif;
+    color: #00B050;
+}

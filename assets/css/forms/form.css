@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+body{
+    background: url(../fotos);
+}
+.login{
+    font-family: 'Cardo', serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-card {
+    width: 350px;
+    background:#EBEBEB;
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #4CC174;
+    transform: rotate(3deg);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+
+.login-card-logo,
+.login-card-header,
+.login-card-footer {
+    text-align: center;
+}
+
+.login-card a {
+    text-decoration: none;
+    color: #43ad69;
+}
+
+.login-card a:hover {
+    text-decoration: underline;
+    
+}
+
+.login-card-header {
+    margin-bottom: 2rem;
+}
+
+.login-card-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.login-card-header h1+div {
+    font-size: calc(1rem * .8);
+    opacity: .8;
+}
+
+.login-card-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.login-card-form .form-item {
+    position: relative;
+    align-items: center;
+}
+input{
+    border-radius: 20px;
+    width: 17.3rem;
+    height: 3rem;
+}
+#entrar{
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: #4CC174;
+    height: 4rem;
+    width: 7rem;
+    margin-top: 55px;
+    font-size: 1.5rem;
+    box-shadow: 3px 4px 0 0 rgb(179, 179, 179);
+}
+#entrar:hover{
+    background-color: #43ad69;
+    transition: 0.3s;
+}
+form{
+    display: block;
+    justify-content: center;
+}
+.login-card-form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: #43ad69;
+}
+input{
+    background-color: #d9d9d9;
+    border: none;
+    height:3rem;
+}
+input:placeholder-shown{
+    padding-left: 1rem;
+}
