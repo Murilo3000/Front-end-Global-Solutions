@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+
     <link href="../assets/css/normalize.css" rel="stylesheet" />
     <link href="../assets/css/reset.css" rel="stylesheet" />
     <link href="../assets/css/cabeçalho.css" rel="stylesheet"/>
@@ -19,8 +21,14 @@
     <link href="../assets/css/menu/menu-item.css" rel="stylesheet"/>
     <link href="../assets/css/menu/menu-link.css" rel="stylesheet"/>
     <link href="../assets/css/menu/menu-lista.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="../assets/css/forms/cadastro.css">
-    <title>Cadastro</title>
+    
+    <link rel="stylesheet" href="../assets/css/estufa/estufa-imagem.css"/>
+    <link rel="stylesheet" href="../assets/css/estufa/estufa-descrição.css">
+    <link rel="stylesheet" href="../assets/css/estufa/estufa.css">
+
+    <link rel="stylesheet" href="../assets/css/forms/form.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <title>Login</title>
 </head>
 <body>
     <header class="cabeçalho">
@@ -43,64 +51,66 @@
                 </li>
             </ul>
         </nav>
-
         <nav class="botão">
             <ul class="botão__lista">
                 <button class="butt"><span class="material-symbols-outlined">dark_mode</span></button>
                 <button class="butt"><span class="material-symbols-outlined">light_mode</span></button>
             </ul>
         </nav>
-
     </header>
-    <section class="contato formatação">
-        <img class="cadastro__imagem" src="../assets/fotos/estufa-tela-cheia.jpg">
+    <Section class="login formatação">
+        <img class="login__imagem" src="../assets/fotos/estufa-tela-cheia.jpg">
+        <div class="login-card-container card__descrição">
+            <div class="login-card-a">
 
-        <div class="contato-card">  
+                <div class="login-card-header">
+                    <img src="../assets/fotos/logoSemEscrita.png" class="doação__logo">
+                </div>
 
-            <div class="contato-card-item">
+                <form class="login-card-form">
+                    <div class="form-item">
 
-                <form class="contato-card__us">
-                    <img src="../assets/fotos/logoSemEscrita.png" class="logo-contato">
-
-                </form>
-
-
-                <form class="contato-card__info">
-
-                    <div class="form-item__cadastro-a">
-                        <div class="titulo__cadastro">
+                        <div class="titulo-form">
                             Nome completo:
                         </div> 
-                        <input class="sombra" type="text" placeholder="Nome Sobrenome">  
-                    </div>
 
-                    <div class="form-item__cadastro-b">
-                        <div class="titulo__cadastro">
-                            Email:
-                        </div>
-                        <input class="sombra" type="text" placeholder="email@gmail.com" id="emailForm" onchange="validateFields()" required>
+                        <input type="text" placeholder="Nome Sobrenome">
                     </div>
-
-                    <div class="form-item__cadastro-b">
-                            <button class="botão__envieMsg sombra">Envie sua mensagem!</button>
-                    </div>
-                </form>
-
-                <form class="contato-card__msg">
 
                     <div class="form-item">
-                        <div class="titulo__cadastro">
-                            Nos envie sua mensagem:
+
+                        <div>
+                            Email:
                         </div>
-                        <textarea class="area-de-texto" style="resize: none;" placeholder="Digite sua mensagem aqui..."></textarea>
+
+                        <input type="text" placeholder="Email@email.com" id="emailForm" onchange="validateFields()" required>
                     </div>
 
+                    <div class="form-item">
+
+                        <div>
+                            Quanto deseja doar?
+                        </div>
+
+                        <input type="text" placeholder="R$**,**" id="emailForm" onchange="validateFields()" required>
+                    </div>
+
+                    <div>
+                        <p class="escrita">
+                            <button class="check"></button>Doar Mensalmente?
+                        </p>
+                        <p class="escrita">
+                            <button class="check"></button>Receber notificações sobre o projeto?
+                        </p>
+                    </div>
                 </form>
 
-            </div>
+                    <div class="form-item__cadastro">
+                        <button type="button" class="botão__doação" disabled="true" onclick="home()">Fazer doação</button>
+                    </div>
 
+            </div>
         </div>
-        
-    </section>
+    </Section>
 </body>
 </html>

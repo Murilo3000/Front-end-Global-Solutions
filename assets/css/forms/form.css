@@ -4,36 +4,44 @@ body{
 }
 .login{
     font-family: 'Cardo', serif;
-    min-height: 100vh;
+    height: 100rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .login-card {
-    width: 350px;
+    height: 25rem;
+    width: 18rem;
     background:#EBEBEB;
     padding: 4rem;
     border-radius: 10px;
+    border: 3.5px solid #00b050;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.login-card::before {
+.login-card:before {
     content: '';
-    position: absolute;
     inset: 0;
+    opacity: 0.5;
     background: #4CC174;
     transform: rotate(3deg);
     border-radius: 10px;
     z-index: -1;
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 420px;
+    height: 530px;
+    left: 10px; 
+    top: 0.5rem;
 }
 
 
-.login-card-logo,
-.login-card-header,
-.login-card-footer {
+.login-card-logo, .login-card-header, .login-card-footer {
     text-align: center;
 }
 
@@ -66,7 +74,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .login-card-form .form-item {
@@ -85,9 +93,10 @@ input{
     background-color: #4CC174;
     height: 4rem;
     width: 7rem;
-    margin-top: 55px;
+    margin-top: 2rem;
     font-size: 1.5rem;
     box-shadow: 3px 4px 0 0 rgb(179, 179, 179);
+    text-align: center;
 }
 #entrar:hover{
     background-color: #43ad69;
@@ -97,6 +106,7 @@ form{
     display: block;
     justify-content: center;
 }
+
 .login-card-form{
     display:flex;
     flex-direction: column;

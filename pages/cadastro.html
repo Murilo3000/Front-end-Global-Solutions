@@ -12,6 +12,10 @@
     <link href="../assets/css/reset.css" rel="stylesheet" />
     <link href="../assets/css/cabeçalho.css" rel="stylesheet"/>
 
+    <link href="../assets/css/contato.css" rel="stylesheet"/>
+    <link href="../assets/css/forms/cadastro.css" rel="stylesheet"/>
+    <link href="../assets/css/forms/form.css" rel="stylesheet"/>
+
     <link href="../assets/css/menu/menu-item.css" rel="stylesheet"/>
     <link href="../assets/css/menu/menu-link.css" rel="stylesheet"/>
     <link href="../assets/css/menu/menu-lista.css" rel="stylesheet"/>
@@ -34,52 +38,93 @@
                 <li class="menu__item">
                     <a class="menu__link" href="./login.html">Login</a>
                 </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./doações.html">Doações</a>
+                </li>
             </ul>
         </nav>
+
         <nav class="botão">
             <ul class="botão__lista">
                 <button class="butt"><span class="material-symbols-outlined">dark_mode</span></button>
                 <button class="butt"><span class="material-symbols-outlined">light_mode</span></button>
             </ul>
         </nav>
+
     </header>
-    <section class="contato">
-        <div class="contato-card">
+    <section class="contato formatação">
+        <img class="cadastro__imagem" src="../assets/fotos/estufa-tela-cheia.jpg">
+
+        <div class="contato-card">  
+
             <div class="contato-card-item">
+
                 <form class="contato-card__us">
-                    <div id="titulo">O cadastro é o primeiro passo para ajudar o próximo.</div>
-                    <div class="form-item">
-                        <div>Nome:</div> 
-                        <input type="text" placeholder="Nome Sobrenome" autofocus required>
+
+                    <div id="titulo">
+                        O cadastro é o primeiro passo para ajudar o próximo.
                     </div>
-                    <div class="form-item">
-                        <div>Telefone:</div> 
-                        <input type="text" placeholder="(11)98765-4321" autofocus required>
+
+                    <div class="form-item__cadastro">
+                        <div class="titulo__cadastro">
+                            Nome completo:
+                        </div> 
+                        <input class="sombra" type="text" placeholder="Nome Sobrenome" autofocus required>
                     </div>
-                    <div><strong>Ao criar conta, você concorda com os termos de privacidade.</strong></div>
+
+                    <div class="form-item__cadastro">
+                        <div class="titulo__cadastro">
+                            Telefone:
+                        </div> 
+                        <input class="sombra" type="text" placeholder="(11)98765-4321" autofocus required>
+                    </div>
+
+                    <div id="privacidade">
+                            Ao criar conta, você concorda com os termos de <br>privacidade.
+                    </div>
+
                 </form>
+
+
                 <form class="contato-card__info">
-                    <div class="form-item">
-                        <div>Email:</div> 
-                        <input type="text" placeholder="Email@gmail.com" id="emailForm" 
-                        onchange="validateFields()" autofocus required>
+
+                    <div class="form-item__cadastro-a">
+                        <div class="titulo__cadastro">
+                            Email:
+                        </div> 
+                        <input class="sombra" type="text" placeholder="Email@gmail.com" id="emailForm" onchange="validateFields()" autofocus required>  
                     </div>
-                    <div class="form-item">
-                        <div>Senha:</div>
-                        <input type="password" placeholder="*******" id="passwordForm"
-                     onchange="validateFields()" required>
+
+                    <div class="form-item__cadastro-b">
+                        <div class="titulo__cadastro">
+                            Senha:
+                        </div>
+                        <input class="sombra" type="password" placeholder="*******" id="passwordForm" onchange="validateFields()" required>
                     </div>
-                    <div><center><button id="envie">Criar conta</button></center></div>
+
+                    <div class="form-item__cadastro-b">
+                            <button class="botão__enviar">Criar conta</button>
+                    </div>
                 </form>
+
                 <form class="contato-card__msg">
-                    <div>Já possui conta? <a href="../pages/login.html">Entre na sua conta!</a></div>
-                    <div class="form-item">
-                        <div>Nos envie sua mensagem:</div>
-                        <textarea placeholder="Digite sua mensagem aqui..."></textarea>
+                    <div id="entre-conta">
+                        Já possui conta? <a href="../pages/login.html">Entre na sua conta!</a>
                     </div>
+
+                    <div class="form-item">
+                        <div class="titulo__cadastro">
+                            Nos envie sua mensagem:
+                        </div>
+                        <textarea class="area-de-texto" style="resize: none;" placeholder="Digite sua mensagem aqui..."></textarea>
+                    </div>
+
                 </form>
+
             </div>
+
         </div>
+        
     </section>
 </body>
 </html>
