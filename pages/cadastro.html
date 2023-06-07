@@ -46,8 +46,8 @@
 
         <nav class="botão">
             <ul class="botão__lista">
-                <button class="butt"><span class="material-symbols-outlined">dark_mode</span></button>
-                <button class="butt"><span class="material-symbols-outlined">light_mode</span></button>
+                <button class="butt" onclick="trocaDark_forms()"><span class="material-symbols-outlined">dark_mode</span></button>
+                <button class="butt" onclick="trocaLight_forms()"><span class="material-symbols-outlined">light_mode</span></button>
             </ul>
         </nav>
 
@@ -92,18 +92,18 @@
                         <div class="titulo__cadastro">
                             Email:
                         </div> 
-                        <input class="sombra" type="text" placeholder="Email@gmail.com" id="emailForm" onchange="validateFields()" autofocus required>  
+                        <input class="sombra" type="text" placeholder="Email@gmail.com" id="emailForm" onchange="isEmailValid()" autofocus required>  
                     </div>
 
                     <div class="form-item__cadastro-b">
                         <div class="titulo__cadastro">
                             Senha:
                         </div>
-                        <input class="sombra" type="password" placeholder="*******" id="passwordForm" onchange="validateFields()" required>
+                        <input class="sombra" type="password" placeholder="*******" id="passwordForm" required>
                     </div>
 
                     <div class="form-item__cadastro-b">
-                            <button class="botão__enviar">Criar conta</button>
+                            <button class="botão__enviar" onclick="home()">Criar conta</button>
                     </div>
                 </form>
 
@@ -126,5 +126,6 @@
         </div>
         
     </section>
+    <script src="../script.js"></script>
 </body>
 </html>

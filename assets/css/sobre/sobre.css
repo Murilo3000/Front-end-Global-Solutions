@@ -1,3 +1,7 @@
+:root{
+    --cor-background:white;
+}
 .sobre {
     text-align: center;
+    background: var(--cor-background);
 }

@@ -1,7 +1,10 @@
+:root{
+    --cor-font2: white;
+}
 .sobre__descrição{
     margin-top: 2rem;
     font-size: 3rem;
     font-weight: 100;
     font-size: 3rem;
-    color: #404040;
+    color: var(--cor-font2);
  }

@@ -20,7 +20,7 @@
     <link href="../assets/css/menu/menu-link.css" rel="stylesheet"/>
     <link href="../assets/css/menu/menu-lista.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/css/forms/cadastro.css">
-    <title>Cadastro</title>
+    <title>Contato</title>
 </head>
 <body>
     <header class="cabeçalho">
@@ -46,8 +46,8 @@
 
         <nav class="botão">
             <ul class="botão__lista">
-                <button class="butt"><span class="material-symbols-outlined">dark_mode</span></button>
-                <button class="butt"><span class="material-symbols-outlined">light_mode</span></button>
+                <button class="butt" onclick="trocaDark_forms()"><span class="material-symbols-outlined">dark_mode</span></button>
+                <button class="butt" onclick="trocaLight_forms()"><span class="material-symbols-outlined">light_mode</span></button>
             </ul>
         </nav>
 
@@ -55,7 +55,7 @@
     <section class="contato formatação">
         <img class="cadastro__imagem" src="../assets/fotos/estufa-tela-cheia.jpg">
 
-        <div class="contato-card">  
+        <section class="contato-card help">  
 
             <div class="contato-card-item">
 
@@ -78,11 +78,11 @@
                         <div class="titulo__cadastro">
                             Email:
                         </div>
-                        <input class="sombra" type="text" placeholder="email@gmail.com" id="emailForm" onchange="validateFields()" required>
+                        <input class="sombra" type="text" placeholder="email@gmail.com" id="emailForm" onchange="isEmailValid()" required>
                     </div>
 
                     <div class="form-item__cadastro-b">
-                            <button class="botão__envieMsg sombra">Envie sua mensagem!</button>
+                            <button class="botão__envieMsg sombra" onclick="home()">Envie sua mensagem!</button>
                     </div>
                 </form>
 
@@ -99,8 +99,9 @@
 
             </div>
 
-        </div>
+        </section>
         
     </section>
+    <script src="../script.js"></script>
 </body>
 </html>

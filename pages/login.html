@@ -53,8 +53,8 @@
         </nav>
         <nav class="botão">
             <ul class="botão__lista">
-                <button class="butt"><span class="material-symbols-outlined">dark_mode</span></button>
-                <button class="butt"><span class="material-symbols-outlined">light_mode</span></button>
+                <button class="butt" onclick="trocaDark_forms()"><span class="material-symbols-outlined">dark_mode</span></button>
+                <button class="butt" onclick="trocaLight_forms()"><span class="material-symbols-outlined">light_mode</span></button>
             </ul>
         </nav>
     </header>
@@ -71,10 +71,10 @@
                     <div class="form-item">
 
                         <div class="titulo-form">
-                            Email:
+                            Usuário:
                         </div> 
 
-                        <input type="text" placeholder="Email@gmail.com" id="emailForm" onchange="validateFields()" autofocus required>
+                        <input type="text" placeholder="usuario" id="us" onchange="usuario()" autofocus required>
                     </div>
 
                     <div class="form-item">
@@ -83,17 +83,18 @@
                             Senha:
                         </div>
 
-                        <input type="password" placeholder="*******" id="passwordForm" onchange="validateFields()" required>
+                        <input type="password" placeholder="*******" id="passwordForm" onchange="usuario()" required>
                     </div>
                 </form>
 
                     <div class="form-item__cadastro">
                         Não possui conta? <a href="../pages/cadastro.html">Cadastre-se!</a>
-                        <button type="button" id="entrar" disabled="true" onclick="home()">Entrar</button>
+                        <center><button type="button" id="entrar" onclick="usuario()">Entrar</button></center>
                     </div>
 
             </div>
         </div>
     </Section>
+    <script src="../script.js"></script>
 </body>
 </html>

@@ -2,6 +2,10 @@
 body{
     background: url(../fotos);
 }
+:root{
+    --cor-background:white;
+    --cor-font2:black;
+}
 .login{
     font-family: 'Cardo', serif;
     height: 100rem;
@@ -12,7 +16,7 @@ body{
 .login-card {
     height: 25rem;
     width: 18rem;
-    background:#EBEBEB;
+    background:var(--cor-background);
     padding: 4rem;
     border-radius: 10px;
     border: 3.5px solid #00b050;
@@ -75,11 +79,13 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+    
 }
 
 .login-card-form .form-item {
     position: relative;
     align-items: center;
+    color: var(--cor-font2) ;
 }
 input{
     border-radius: 20px;
@@ -123,4 +129,7 @@ input{
 }
 input:placeholder-shown{
     padding-left: 1rem;
+}
+.login-card-a{
+    background-color: var(--cor-background);
 }

@@ -1,5 +1,8 @@
+:root{
+    --cor-font1:white;
+}
 .pix__titulo{
     padding-top: 1rem;
-    color: white;
+    color: var(--cor-font1);
     font-size: 4rem;
 }

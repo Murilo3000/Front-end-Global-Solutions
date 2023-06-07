@@ -51,6 +51,7 @@
     <link href="./assets/css/fim/fim-info.css" rel="stylesheet"/>
     <link href="./assets/css/fim/fim-titulo.css" rel="stylesheet"/>
     <link href="./assets/css/fim/fim-separação" rel="stylesheet"/>
+    <link rel="stylesheet" href="./assets/css/fim/fim-divisão.css">
     <title>Green-House</title>
 </head>
 <body>
@@ -83,8 +84,8 @@
         </nav>
         <nav class="botão">
             <ul class="botão__lista">
-                <button class="butt"><span class="material-symbols-outlined">dark_mode</span></button>
-                <button class="butt"><span class="material-symbols-outlined">light_mode</span></button>
+                <button class="butt" onclick="trocaDark_index()"><span class="material-symbols-outlined">dark_mode</span></button>
+                <button class="butt" onclick="indexLight()"><span class="material-symbols-outlined">light_mode</span></button>
             </ul>
         </nav>
     </header>
@@ -103,21 +104,51 @@
 
     <div class="cards">
         <div class="card">
-            <img src="./assets/fotos/foto1.PNG" alt="Imagem 1">
+            <img id="imagem1"/>
+            <script>
+                var imagens = [
+                    "assets/fotos/seca1.jpg",
+                    "assets/fotos/seca2.jpg",
+                    "assets/fotos/foto1.PNG",
+                ];
+                var Index = 0;
+                function slideShow() {
+                    document.getElementById('imagem1').src = imagens[Index];
+                    Index++;
+                    if (Index == imagens.length) { Index = 0; }
+                    setTimeout("slideShow()", 3000);
+                }
+                slideShow();
+            </script>
             <div class="description">
                 <p>A fome afeta especialmente a África, onde a escassez de alimentos é agravada pela seca persistente no chifre da África. Mais de 200 mil pessoas estão em risco de fome catastrófica, com projeção de aumento de 160% segundo a FAO.</p>
             </div>
         </div>
 
         <div class="card">
-            <img src="./assets/fotos/foto2.PNG" alt="Imagem 2">
+            <img id="imagem2">
+            <script>
+                var imagens2 = [
+                    "assets/fotos/foto2.PNG",
+                    "assets/fotos/fome1.jpg",
+                    "assets/fotos/fome2.jpg",
+                ];
+                var Index = 0;
+                function slideShow2() {
+                    document.getElementById('imagem2').src = imagens2[Index];
+                    Index++;
+                    if (Index == imagens2.length) { Index = 0; }
+                    setTimeout("slideShow2()", 3000);
+                }
+                slideShow2();
+            </script>
             <div class="description">
                 <p>Secas, solos inférteis e chuvas irregulares causam escassez de colheitas, resultando em fome e desnutrição generalizadas devido à dificuldade na produção de alimentos.</p>
             </div>
         </div>
     </div>
 
-    <center><button id="duvida">Alguma duvida? Nos envie uma mensagem!</button></center>
+    <center><button id="duvida" onclick="window.open('pages/contato.html')">Alguma duvida? Nos envie uma mensagem!</button></center>
 
     <section class="estufa">
         <img class="estufa__imagem" src="./assets/fotos/estufa.png">
@@ -156,34 +187,57 @@
             <br><br>Nosso CNPJ:
             <br>***.***.***/****-**
         </p>
-        <class class="fim">
-            <div class="fim__separação">
-                <p class="fim__titulo">Conta</p>
-                <button class="fim__info">Login</button>
-                <button class="fim__info">Cadastro</button>
+        </div>
+        <footer>
+            <div class="fim__date">
+                <div class="fim__date--conteudo">Data:
+                    <script>
+                        let data = new Date()
+                        let dia = String(data.getDate()).padStart(2,0)
+                        let mes = String(data.getMonth()+1).padStart(2,0)
+                        let ano = data.getFullYear()
+                        let dataAtual = `${dia}/${mes}/${ano}`
+                        document.write(dataAtual)
+                    </script>
+                    Hora:
+                    <script>
+                        let date1 = new Date()
+                        let hour = String(date1.getHours())
+                        let minutes = String(date1.getMinutes())
+                        let hora = `${hour}:${minutes}`
+                        document.write(hora)
+                    </script>
+                </div>
             </div>
+            <class class="fim">
+                <div class="fim__separação">
+                    <p class="fim__titulo">Conta</p>
+                    <button class="fim__info" onclick="window.open('./pages/login.html')">Login</button>
+                    <button class="fim__info"onclick="window.open('./pages/cadastro.html')">Cadastro</button>
+                </div>
 
-            <div class="fim__separação">
-                <p class="fim__titulo">Contato</p>
-                <button class="fim__info">Whatsapp</button>
-                <button class="fim__info">E-mail</button>
-                <button class="fim__info">Telefone</button>
-            </div>
+                <div class="fim__separação">
+                    <p class="fim__titulo">Contato</p>
+                    <button class="fim__info">Whatsapp</button>
+                    <button class="fim__info">E-mail</button>
+                    <button class="fim__info">Telefone</button>
+                </div>
 
-            <div class="fim__separação">
-                <p class="fim__titulo">Redes sociais</p>
-                <button class="fim__info">Instagram</button>
-                <button class="fim__info">Facebook</button>
-            </div>
+                <div class="fim__separação">
+                    <p class="fim__titulo">Redes sociais</p>
+                    <button class="fim__info">Instagram</button>
+                    <button class="fim__info">Facebook</button>
+                </div>
 
-            <div class="fim__separação">
-                <p class="fim__titulo">Outros</p>
-                <button class="fim__info">Cookies</button>
-                <button class="fim__info">Termos</button>
-            </div>
-        </class>
+                <div class="fim__separação">
+                    <p class="fim__titulo">Outros</p>
+                    <button class="fim__info">Cookies</button>
+                    <button class="fim__info">Termos</button>
+                </div>
+            </class>
+        </footer>
     </section>
-
-    
+    <script>alert("Seja Bem-vindo")</script>
+    <script src="../script.js"></script>
 </body>
 </html>

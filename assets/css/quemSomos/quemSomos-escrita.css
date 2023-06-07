@@ -1,5 +1,9 @@
+:root{
+    --cor-font2: black;
+}
 .quemSomos__descrição--escrita{
     font-size: 3.1rem;
     margin-right: 20%;
     height: 78rem;
+    color: var(--cor-font2);
 }

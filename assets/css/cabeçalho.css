@@ -1,7 +1,11 @@
+:root{
+    --cor-font1: white;
+
+}
 .cabeçalho {
     align-items: center;
     background: #50c474;
-    color: white;
+    color: var(--cor-font1);
     display: flex;
     justify-content: left;
     padding-left: 2rem;
@@ -16,9 +20,9 @@
 
 hr{
     transform: rotate(-90deg);
-    color: #ffff;
-    background-color: white;
-    border: 0.5px solid #FFFFFF;
+    color: var(--cor-font1);
+    background-color: var(--cor-font1);
+    border: 0.5px solid var();
     padding: 0 6px;
 }
 

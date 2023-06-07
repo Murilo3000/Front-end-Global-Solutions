@@ -1,5 +1,8 @@
+:root{
+    --cor-font1: white;
+}
 .menu__link {
-    color: white;
+    color: var(--cor-font1);
     margin-right: 1.25rem;
     text-decoration: none;
     font-size: 1.5rem;
